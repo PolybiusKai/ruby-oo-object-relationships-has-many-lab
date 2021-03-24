@@ -6,7 +6,7 @@ class Author
         @name = name
     end
 
-    def posts
+    def posts #Has many Posts
         Post.all.select {|post| post.author == self}
     end
 
